@@ -1,0 +1,1 @@
+d. El nombre de las sondas cuyo costo de construcción supera el costo promedio entre todas las sondas.

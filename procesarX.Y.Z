@@ -1,0 +1,20 @@
+program Procesamiento:X.Y.Z;
+Function esNumero(c: char): boolean;
+Begin
+  esNumero := (c >= '0') And (c <= '9');
+End;
+Procedure cumpleX(Var cumple : boolean);
+
+Var 
+  c: char;
+Begin
+  writeln('Ingrese la secuencia X');
+  readln(c);
+  While (c <> '&') And (cumple) Do
+    Begin
+      If (Not esNumero(c)) Then
+        cumple := false
+      Else
+        readln(c);
+    End;
+End;
